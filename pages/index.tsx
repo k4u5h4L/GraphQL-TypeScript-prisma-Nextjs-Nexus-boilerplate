@@ -2,8 +2,11 @@ import { useQuery, gql } from "@apollo/client";
 import { initializeApollo } from "utils/apollo";
 
 const MyQuery = gql`
-  query MyQuery {
-    name
+  query {
+    allMovies {
+      name
+      desc
+    }
   }
 `;
 
